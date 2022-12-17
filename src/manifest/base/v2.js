@@ -15,17 +15,31 @@ module.exports = {
   short_name,
   description,
   permissions: [...permissions, "https://*/*"],
+  options_ui: {
+	"page": "assets/html/options.html"
+  },
   browser_action: {
     "default_title": short_name,
     "default_popup": "assets/html/popup.html"
   },
   "content_scripts": [{
-    "matches": ["<all_urls>"],
+    "matches": [
+		"*://*.dailywire.com/*",
+		"*://*.twitter.com/libsoftiktok*",
+		"*://*.twitter.com/ALLIANCELGB*",
+		"*://*.twitter.com/benshapiro*",
+		"*://*.twitter.com/wesyang*",
+		"*://*.twitter.com/AbigailShrier*",
+		"*://*.kiwifarms.com/*",
+		"*://*.lgballiance.org.uk/*",
+		"*://*.focusonthefamily.com/*",
+		"*://*.adflegal.org/*",
+	],
     // "css": ["myStyles.css"],
     "js": ["content.js"]
   }],
   icons: {
-    "128": "assets/images/logo.png"
+    "128": "assets/images/logo.webp"
   },
   background: {
     "scripts": ["background.js"]

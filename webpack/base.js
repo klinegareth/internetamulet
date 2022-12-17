@@ -30,6 +30,7 @@ const Content = join(Source, "content");
 const Popup = join(Source, "popup");
 const Lib = join(Source, "lib");
 const Option = join(Source, "option");
+const Safety = join(Source, "safety");
 
 const config = {
   mode: process.env.NODE_ENV,
@@ -40,6 +41,7 @@ const config = {
     popup: join(Popup, "index.tsx"),
     content: join(Content, "index.tsx"),
     option: join(Option, "index.tsx"),
+    safety: join(Safety, "index.tsx"),
   },
   output: {
     path: join(__dirname, "../", "dist"),
@@ -148,6 +150,7 @@ const config = {
       popup: Popup,
       assets: Assets,
       option: Option,
+      safety: Safety,
     },
   },
   optimization: {

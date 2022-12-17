@@ -1,5 +1,5 @@
 module.exports = {
-  name: "Browser Extension",
-  short_name: "Ext",
-  description: "Browser Extension Boilerplate",
+  name: "Internet Amulet",
+  short_name: "Amulet",
+  description: "A talisman against those who mean us harm",
 }

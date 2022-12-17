@@ -21,7 +21,7 @@ const App = () => {
 
 	return (
 		<div id="app-root">
-			<img id="background-img" src="../images/star-night-gifbig.gif"/>
+			<img id="background-img" src="../images/tumblr_mmo0kcrYVU1sp2y00o1_500.gif"/>
 			<div id="affirming-text">
 				<h1>
 				<TextTransition springConfig={presets.molasses}>

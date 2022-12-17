@@ -1,9 +1,28 @@
-#app-root {
-  width: 400px;
-  height: 75px;
-  padding: 2px;
+:root {
+	--overflow-value: hidden;
+}
 
-  h1 {
-    text-align: center;
-  }
+body {
+  overflow: var(--overflow-value);
+}
+
+#app-root {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  background-color: white;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+#proceed {
+}
+
+#safety {
+}
+
+#warning-image {
+
 }
