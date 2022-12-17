@@ -1,11 +1,10 @@
-import React from "react";
-import TextTransition, { presets } from "react-text-transition";
+import React, {useEffect} from "react";
+import Fade from "react-reveal/Fade";
 
 const TEXTS = [
   "you are protected",
   "you are safe",
-  "your community loves you",
-  "you belong online"
+  "you belong here"
 ];
 
 const App = () => {
@@ -14,21 +13,21 @@ const App = () => {
 	React.useEffect(() => {
 		const intervalId = setInterval(() =>
 		  setIndex(index => index + 1),
-		  2000 // every 1 seconds
+		  5000 // every 5 seconds
 		);
 		return () => clearTimeout(intervalId);
 	  }, []);
 
 	return (
 		<div id="app-root">
-			<img id="background-img" src="../images/tumblr_mmo0kcrYVU1sp2y00o1_500.gif"/>
-			<div id="affirming-text">
-				<h1>
-				<TextTransition springConfig={presets.molasses}>
-					{TEXTS[index % TEXTS.length]}
-				</TextTransition>
-				</h1>
+			<div id="panel-container">
+				<Fade id="animated-text">
+					<h1 key={index}>	
+						{TEXTS[index % TEXTS.length]}
+					</h1>
+				</Fade>
 			</div>
+			<img id="background-img" src="../images/moon.gif"/>
 		</div>
 	);
 }

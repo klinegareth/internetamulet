@@ -1,11 +1,10 @@
 import React from "react";
-import TextTransition, { presets } from "react-text-transition";
+import Fade from "react-reveal/Fade";
 
 const TEXTS = [
   "you are protected",
   "you are safe",
-  "your community loves you",
-  "you belong online"
+  "you belong here"
 ];
 
 const App = () => {
@@ -23,11 +22,11 @@ const App = () => {
 		<div id="app-root">
 			<img id="background-img" src="../images/star-night-gifbig.gif"/>
 			<div id="affirming-text">
-				<h1>
-				<TextTransition springConfig={presets.molasses}>
-					{TEXTS[index % TEXTS.length]}
-				</TextTransition>
-				</h1>
+				<Fade id="animated-text">
+					<h1 key={index}>	
+						{TEXTS[index % TEXTS.length]}
+					</h1>
+				</Fade>
 			</div>
 		</div>
 	);
