@@ -2,9 +2,9 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 
 const TEXTS = [
+  "you belong here",
   "you are protected",
-  "you are safe",
-  "you belong here"
+  "you are safe"
 ];
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
 	React.useEffect(() => {
 		const intervalId = setInterval(() =>
 		  setIndex(index => index + 1),
-		  2000 // every 1 seconds
+		  2000 // every 2 seconds
 		);
 		return () => clearTimeout(intervalId);
 	  }, []);
