@@ -1,8 +1,8 @@
 # Internet Amulet
 
-A browser extension built to protect trans people online. WIP.
+A browser extension built to protect trans people online. WIP. [Inspiration](https://www.are.na/kline-gareth/internet-amulet)
 
-## Video demo: 
+## Video demo
 
 [![Video](https://img.youtube.com/vi/QwVpn8axFFo/0.jpg)](https://www.youtube.com/watch?v=QwVpn8axFFo)
 
