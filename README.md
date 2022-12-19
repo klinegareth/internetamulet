@@ -13,7 +13,7 @@ Currently only fully compatible with Firefox.
 ```
 git clone https://github.com/klinegareth/internetamulet
 cd internetamulet
-npm install
+npm install --force
 npm run prebuild
 npm run init:profile
 npm run build:firefox
@@ -26,6 +26,7 @@ npm run start:firefox
 - [ ] Add Context Menu option to flag site as transphobic
 - [ ] Cross-browser support
 - [ ] Improve mobile layout & compatibility
+- [ ] Fix node dependency issues
 
 ## Credits
 
