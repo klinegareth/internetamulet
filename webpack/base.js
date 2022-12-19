@@ -129,6 +129,10 @@ const config = {
           to: "assets/html",
         },
         {
+          from: join(Assets, "fonts"),
+          to: "assets/css",
+        },
+        {
           from: join(Assets, "images"),
           to: "assets/images",
         },

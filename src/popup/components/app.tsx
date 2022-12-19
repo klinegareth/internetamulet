@@ -27,6 +27,7 @@ const App = () => {
 						{TEXTS[index % TEXTS.length]}
 					</h1>
 				</Fade>
+				<a id="safety-link" href={browser.extension.getURL("assets/html/safety.html")} onClick={window.close} target="_blank">click 4 safety</a>
 			</div>
 		</div>
 	);

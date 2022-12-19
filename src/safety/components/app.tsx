@@ -26,6 +26,17 @@ const App = () => {
 						{TEXTS[index % TEXTS.length]}
 					</h1>
 				</Fade>
+				<ul>
+					<li>
+						<a id="lifeline" href={"https://translifeline.org/"} onClick={window.hide} rel="noopener noreferrer" target="blank">lifeline</a>
+					</li>
+					<li>
+						<a id="history" href={"https://www.digitaltransgenderarchive.net/"} onClick={window.hide} rel="noopener noreferrer" target="blank">history</a>
+					</li>
+					<li>
+						<a id="memes" href={"https://www.reddit.com/r/traaaaaaannnnnnnnnns/"} onClick={window.hide} rel="noopener noreferrer" target="blank">memes</a>
+					</li>
+				</ul>
 			</div>
 			<img id="background-img" src="../images/moon.gif"/>
 		</div>
